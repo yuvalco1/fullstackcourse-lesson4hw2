@@ -42,15 +42,27 @@ public class Main {
 
 //Exercise hw2#3
 //get 2 numbers and calculate power x^y
+
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("please enter 2 numbers to calculate power x^y:");
+//        int x = scanner.nextInt();
+//        int y = scanner.nextInt();
+//        int powerxy = 1;
+//        for (int i = 0; i < y; i++) {
+//            powerxy *= x;
+//        }
+//        System.out.println("The power of " + x + " to " + y + " is: " + powerxy);
+
+//Exercise hw2#4
+//Ask user to enter number and print reverse number
         Scanner scanner = new Scanner(System.in);
-        System.out.println("please enter 2 numbers to calculate power x^y:");
-        int x = scanner.nextInt();
-        int y = scanner.nextInt();
-        int powerxy = 1;
-        for (int i = 0; i < y; i++) {
-            powerxy *= x;
+        System.out.println("please enter number:");
+        int input_number = scanner.nextInt();
+        while (input_number > 10) {
+            System.out.print(input_number % 10);
+            input_number = input_number / 10;
         }
-        System.out.println("The power of " + x + " to " + y + " is: " + powerxy);
+        System.out.print(input_number);
 
     }
 }
