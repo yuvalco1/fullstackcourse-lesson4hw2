@@ -55,14 +55,38 @@ public class Main {
 
 //Exercise hw2#4
 //Ask user to enter number and print reverse number
+//Example: 1234 -> 4321
+
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("please enter number:");
+//        int input_number = scanner.nextInt();
+//        while (input_number > 10) {
+//            System.out.print(input_number % 10);
+//            input_number = input_number / 10;
+//        }
+//        System.out.print(input_number);
+
+//Exercise hw2#5
+
         Scanner scanner = new Scanner(System.in);
-        System.out.println("please enter number:");
-        int input_number = scanner.nextInt();
-        while (input_number > 10) {
-            System.out.print(input_number % 10);
-            input_number = input_number / 10;
+        int sum_odd = 0;
+        int sum_even = 0;
+        int counter = 1;
+        while (counter < 11) {
+            System.out.println("please enter number:");
+            int input_number = scanner.nextInt();
+            if (counter % 2 == 1) {
+                sum_odd += input_number;
+            } else {
+                sum_even += input_number;
+            }
+            counter++;
         }
-        System.out.print(input_number);
+        System.out.println("sum of numbers in odd position is: " + sum_odd);
+        System.out.println("sum of numbers in even position is: " + sum_even);
+
+
+
 
     }
 }
