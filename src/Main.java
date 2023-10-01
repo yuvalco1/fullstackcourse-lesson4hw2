@@ -86,15 +86,27 @@ public class Main {
 //        System.out.println("sum of numbers in even position is: " + sum_even);
 
 //Exercise hw2#6
+//get a number n from user and print sum of fraction 1+1/2+1/3+...+1/n
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("please enter number n, to calculate sum of fraction 1+1/2+1/3+...+1/n:");
-        int n = scanner.nextInt();
-        double sum_fraction = 0;
-        for (int i = 1; i <= n; i++) {
-            sum_fraction += 1.0 / i;
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("please enter number n, to calculate sum of fraction 1+1/2+1/3+...+1/n:");
+//        int n = scanner.nextInt();
+//        double sum_fraction = 0;
+//        for (int i = 1; i <= n; i++) {
+//            sum_fraction += 1.0 / i;
+//        }
+//        System.out.println("sum of fraction 1+1/2+1/3+...+1/"+n+" is: " + sum_fraction);
+
+//Exercise hw2#7
+//print tripode of * with height 5
+
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
         }
-        System.out.println("sum of fraction 1+1/2+1/3+...+1/"+n+" is: " + sum_fraction);
+
 
     }
 }
